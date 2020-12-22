@@ -7,8 +7,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class AlterarDadosDeUsuarioTelefonePage extends CommonsBasePage {
 
@@ -16,7 +15,7 @@ public class AlterarDadosDeUsuarioTelefonePage extends CommonsBasePage {
     Actions builder;
 
 
-    public void AlterarDadosDeUsuarioTelefonePage() {
+    public AlterarDadosDeUsuarioTelefonePage() {
         wait = new WebDriverWait(_Driver(), 15);
         builder = new Actions(_Driver());
     }
@@ -30,7 +29,8 @@ public class AlterarDadosDeUsuarioTelefonePage extends CommonsBasePage {
     }
     
     public void validarTel() {
-        assertFalse("O telefone não foi alterado", wait.until(ExpectedConditions.textToBe(By.name("telefonePrincipal"), "11985741111")));
+        WebElement alterarTel = _Driver().findElement(By.name("telefonePrincipal"));
+        assertEquals("(11)9827-8528", alterarTel.getAttribute("value"));
     }
 
 }

@@ -23,7 +23,7 @@ public class Hooks extends DriverFactory {
         iniciarDriver();
     }
 
-/*    @AfterStep
+    @AfterStep
     public void takeScreenshot(Scenario scenario) throws IOException, AWTException {
         SimpleDateFormat formatoDeData = new SimpleDateFormat("yyyyMMdd-HHmmss-SSS");
         String fileName = formatoDeData.format(new Date());
@@ -37,6 +37,6 @@ public class Hooks extends DriverFactory {
     @After
     public void finalizaDriver() throws IOException{
         _Driver().quit();
-    }*/
+    }
 
 }

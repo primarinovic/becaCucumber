@@ -10,7 +10,7 @@ public class AlterarDadosDeUsuarioTelefoneTestSteps {
 	
 	@E ("altero o Telefone Principal")
 	public void alteraTel() {
-		alterarDados.alterarTel("11985741113");
+		alterarDados.alterarTel("1198278528");
 	}
 
 	@Então("a página recarrega com o telefone atualizado")

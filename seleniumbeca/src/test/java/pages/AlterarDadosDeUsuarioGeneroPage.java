@@ -19,7 +19,7 @@ public class AlterarDadosDeUsuarioGeneroPage extends CommonsBasePage {
     Actions builder;
 
 
-    public void AlterarDadosDeUsuarioGeneroPage() {
+    public AlterarDadosDeUsuarioGeneroPage() {
         wait = new WebDriverWait(_Driver(), 15);
         builder = new Actions(_Driver());
     }

@@ -57,5 +57,8 @@ public class CommonsBasePage extends DriverFactory {
 
     }
 
+    public void irAteTabelaFipe() {
+        navegarAteSite("https://www.webmotors.com.br/tabela-fipe/");
+    }
 
 }
